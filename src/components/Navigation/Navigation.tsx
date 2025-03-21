@@ -1,8 +1,9 @@
-import {  NavDropdown } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import { Theme } from 'common/enums';
+import { Spacer } from 'components';
 
 export const Navigation = () => {
   const onThemeSelection = (theme: Theme) => {
@@ -14,14 +15,15 @@ export const Navigation = () => {
   }
 
   return (
-    <Navbar collapseOnSelect expand="md" className="bg-body-tertiary px-5">
+    <>
+      <Navbar collapseOnSelect expand="md" className="bg-body-tertiary px-5">
         <Navbar.Brand >Jason's Homepage</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav"> 
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/research">Research</Nav.Link>
             <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-            <Nav.Link href="https://contact.vsceptre.com/ecard/jason-tsang">Name card</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="https://github.com/jasontslxd">
@@ -39,6 +41,8 @@ export const Navigation = () => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-    </Navbar>
+      </Navbar>
+    <Spacer size="xxlg" />
+    </>
   )
 }
