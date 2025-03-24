@@ -7,11 +7,11 @@ export const App = () => {
     <>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/homepage" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/research" element={<Research />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/homepage" />} />
       </Routes>
     </>
   )
