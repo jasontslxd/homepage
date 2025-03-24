@@ -8,7 +8,7 @@ import { Spacer } from 'components';
 export const Navigation = () => {
   const onThemeSelection = (theme: Theme) => {
     if (theme === Theme.AUTO) {
-      document.documentElement.setAttribute('data-bs-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-bs-theme', window.matchMedia('(prefers-color-scheme: dark)').matches ? Theme.DARK : Theme.LIGHT);
     } else {
       document.documentElement.setAttribute('data-bs-theme', theme);
     }
@@ -22,6 +22,7 @@ export const Navigation = () => {
         <Navbar.Collapse id="responsive-navbar-nav"> 
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
             <Nav.Link as={Link} to="/research">Research</Nav.Link>
             <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
           </Nav>
@@ -42,7 +43,7 @@ export const Navigation = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    <Spacer size="xxlg" />
+      <Spacer size="xxlg" />
     </>
   )
 }

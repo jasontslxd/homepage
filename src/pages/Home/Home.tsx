@@ -1,4 +1,4 @@
-import { Spacer } from "components";
+import { Spacer, ImageWithCaption } from "components";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -34,14 +34,13 @@ export const Home = () => {
           <li>
             I am a Solution Consultant at <a href="https://vsceptre.com" target="blank">Vsceptre</a>, mainly working on delivering observability, DevOps and AI related projects.
             I am also responsible for the development of internal IT resources using React.js and Python, such as 
-            our <a href="https://contact.vsceptre.com/ecard/jason-tsang" target="blank">online name card solution</a> and
-            a <a href="https://demo.vsceptre.com" target="blank">chatbot</a> for internal and demo use cases.
+            our online name card solution and a chatbot for internal and demo use cases. More on that can be found <Link to="/projects">here</Link>.
           </li>
           <li>
             Previously, I was an Analyst Engineer at National Australia Bank, focusing on frontend development using React.js, Typescript and GraphQL for various 
             inhouse projects, such as <a href="https://www.nab.com.au/business/portal-pay" target="blank">NAB Portal Pay</a>, a real estate payment platform for NAB's business customers,
-            and term deposit related applications, such as an 
-            <a href="https://www.nab.com.au/common/forms/new-nab-term-deposit#?products=nab-term-deposit" target="blank">online application</a> for NAB Term Deposits.
+            and term deposit related applications, such as 
+            an <a href="https://www.nab.com.au/common/forms/new-nab-term-deposit#?products=nab-term-deposit" target="blank">online application</a> for NAB Term Deposits.
           </li>
           <li>
             I graduated from the University of Melbourne with a Masters in Computer Science (Distinction) and Bachelor of Science in Mathematical Physics. During my final year,
@@ -51,14 +50,12 @@ export const Home = () => {
           <li>
             After living in Melbourne for nearly 11 years, I have decided to quit my job in Melbourne return to Hong Kong in September 2024. Though I enjoyed my time
             in Melbourne a lot, Hong Kong still feels like home to me with most of my family and a lot of friends still here. After a brief stint as a solution consultant, 
-            I realised that I really enjoy being a software developer. Hence, I hope I am able to continue my career as a software developer in Hong Kong.
+            I realised that I really enjoy being an inhouse software developer. Hence, I hope I am able to continue my career as a software developer in Hong Kong.
           </li>
         </ul>
       </Row>
       
       <Spacer size="xxlg" />
-
-
 
       <Row>
         <h2>Publications and Projects</h2>
@@ -74,17 +71,11 @@ export const Home = () => {
         </p>
         <Row>
           <Col xs={12} md={6} className="d-flex align-items-center justify-content-center my-3">
-            <div className="text-center w-100">
-              <img style={{width: '80%', height: 'auto', aspectRatio: '3/4'}} className="object-fit-cover" src={process.env.PUBLIC_URL + '/images/climbing.jpg'} alt="Jason climbing" />
-              <p className="text-muted"><small>Conquering a route called Boogie til you puke on top rope in Mt. Macedon, Victoria, Australia</small></p>
-            </div>
+            <ImageWithCaption imageSrc="images/climbing.jpg" caption="Conquering a route called Boogie til you puke on top rope in Mt. Macedon, Victoria, Australia" alt="Jason climbing" aspectRatio="3/4" />
           </Col>
 
           <Col xs={12} md={6} className="d-flex align-items-center justify-content-center my-3">
-            <div className="text-center w-100">
-              <img style={{width: '80%', height: 'auto', aspectRatio: '3/4'}} className="object-fit-cover" src={process.env.PUBLIC_URL + '/images/skiing.jpg'} alt="Jason skiing" />
-              <p className="text-muted"><small>Skiing at Zao Onsen, Yamagata, Japan</small></p>
-            </div> 
+            <ImageWithCaption imageSrc="images/skiing.jpg" caption="Skiing at Zao Onsen, Yamagata, Japan" alt="Jason skiing" aspectRatio="3/4" />
           </Col>
         </Row>
       </Row>
