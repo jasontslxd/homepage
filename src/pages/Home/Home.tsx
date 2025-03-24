@@ -1,6 +1,6 @@
 import { Spacer, ImageWithCaption } from 'components'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 export const Home = () => {
   return (
