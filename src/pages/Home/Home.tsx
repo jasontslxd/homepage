@@ -68,9 +68,10 @@ export const Home = () => {
           <li>
             After living in Melbourne for nearly 11 years, I have decided to quit my job in Melbourne return to Hong
             Kong in September 2024. Though I enjoyed my time in Melbourne a lot, Hong Kong still feels like home to me
-            with most of my family and a lot of friends still here. After a brief stint as a solution consultant, I
-            realised that I really enjoy being an inhouse software developer. Hence, I hope I am able to continue my
-            career as a software developer in Hong Kong.
+            with most of my family and a lot of friends still here. Currently as a solution consultant, though I get to
+            write code sometimes, it is not what my main focus is on, and I realised that I enjoyed my time as a
+            software developer a lot . Hence, I am looking to transition back into that field and I hope I am able to
+            continue my career as a software developer in Hong Kong.
           </li>
         </ul>
       </Row>
