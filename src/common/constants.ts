@@ -9,7 +9,7 @@ export const PQWGAN_CITATION = `
         pages={1-19},
         doi={10.1109/TQE.2023.3319319}
     }
-`;
+`
 
 export const QAML_CITATION = `
     @article{West2023,
@@ -33,4 +33,4 @@ export const QAML_CITATION = `
         doi={10.1038/s42256-023-00661-1},
         url={https://doi.org/10.1038/s42256-023-00661-1}
     }
-`;
+`

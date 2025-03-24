@@ -1,6 +1,6 @@
-import { Route, Routes, Navigate } from "react-router-dom";
-import { Home, Projects, Research, Experience } from "pages";
-import { Navigation } from "components";
+import { Route, Routes, Navigate } from 'react-router-dom'
+import { Home, Projects, Research, Experience } from 'pages'
+import { Navigation } from 'components'
 
 export const App = () => {
   return (
@@ -14,5 +14,5 @@ export const App = () => {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
-  );
+  )
 }

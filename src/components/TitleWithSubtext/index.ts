@@ -1,1 +1,1 @@
-export * from "./TitleWithSubtext";
+export * from './TitleWithSubtext'
